@@ -5,12 +5,16 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torch.utils.data import DataLoader
+from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
 from ConvNet import ConvNet
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
+import fiftyone as fo
+import fiftyone.utils.random as four
+from PIL import Image
+from FirearmsDataset import FirearmsDataset
 
 
 def train(model, device, train_loader, optimizer, criterion, epoch, batch_size):
@@ -150,20 +154,30 @@ def run_main(FLAGS):
     # Create transformations to apply to each data sample
     # Can specify variations such as image flip, color flip, random crop, ...
     transform = transforms.Compose([
+        transforms.Resize((224, 224)),
         transforms.ToTensor(),
-        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2470, 0.2435, 0.2616))
+        transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
     ])
 
-    # Load datasets for training and testing
-    # Inbuilt datasets available in torchvision (check documentation online)
-    dataset1 = datasets.CIFAR10('./data/', train=True, download=True,
-                              transform=transform)
-    dataset2 = datasets.CIFAR10('./data/', train=False,
-                              transform=transform)
-    train_loader = DataLoader(dataset1, batch_size=FLAGS.batch_size,
-                              shuffle=True, num_workers=4)
-    test_loader = DataLoader(dataset2, batch_size=FLAGS.batch_size,
-                             shuffle=False, num_workers=4)
+    # Load dataset
+    dataset_name = "firearm-detection-final"
+    dataset = fo.load_dataset(dataset_name)
+
+    # Split dataset into train and test
+    four.random_split(dataset, {"train": 0.8, "test": 0.2})
+    train_view = dataset.match_tags("train")
+    test_view = dataset.match_tags("test")
+
+    print("Train samples:", len(train_view))
+    print("Test samples:", len(test_view))
+
+    # Convert sets to PyTorch
+    train_dataset = FirearmsDataset(train_view, transform=transform)
+    test_dataset = FirearmsDataset(test_view, transform=transform)
+
+    # Make loaders
+    train_loader = DataLoader(train_dataset, batch_size=FLAGS.batch_size, shuffle=True)
+    test_loader = DataLoader(test_dataset, batch_size=FLAGS.batch_size, shuffle=False)
 
     best_accuracy = 0.0
 
