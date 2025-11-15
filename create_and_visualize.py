@@ -1,6 +1,7 @@
 import fiftyone as fo
 import fiftyone.utils.openimages as foou
 import fiftyone.zoo as foz
+from fiftyone import Classification
 
 # --- Define our classes ---
 positive_classes = ["Handgun", "Shotgun", "Rifle"]
@@ -42,8 +43,16 @@ print(f"Loaded {len(negative_dataset)} negative samples.")
 print("Clearing labels from negative samples...")
 negative_dataset.clear_sample_field("ground_truth")
 
+# --- 4. Label datasets by classification: firearm/not_firearm ---
+for img in positive_dataset:
+    img["is_firearm"] = Classification(label="firearm")
+    img.save()
 
-# --- 4. Create a new, final dataset and merge them ---
+for img in negative_dataset:
+    img["is_firearm"] = Classification(label="not_firearm")
+    img.save()
+
+# --- 5. Create a new, final dataset and merge them ---
 print("Merging datasets...")
 dataset_name = "firearm-detection-final"
 if fo.dataset_exists(dataset_name):
