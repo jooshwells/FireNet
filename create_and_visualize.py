@@ -24,7 +24,6 @@ positive_dataset = foz.load_zoo_dataset(
 )
 print(f"Loaded {len(positive_dataset)} positive samples.")
 
-
 # --- 2. Load Negative Samples (with contamination prevention) ---
 print("Loading negative samples...")
 negative_dataset = foz.load_zoo_dataset(
@@ -43,7 +42,7 @@ print(f"Loaded {len(negative_dataset)} negative samples.")
 print("Clearing labels from negative samples...")
 negative_dataset.clear_sample_field("ground_truth")
 
-# --- 4. Label datasets by classification: firearm/not_firearm ---
+# --- 4. Label datasets by classification: firearm, not_firearm ---
 for img in positive_dataset:
     img["is_firearm"] = Classification(label="firearm")
     img.save()
@@ -72,8 +71,10 @@ fo.delete_dataset("oiv7-firearms-negative-temp")
 
 print(f"Final dataset created with {len(final_firearm_dataset)} total samples.")
 
+'''
 # (BEST PRACTICE) Use __name__ == "__main__" to safely launch the app
 if __name__ == "__main__":
     session = fo.launch_app(final_firearm_dataset)
     print("App launched. Press Ctrl+C in this terminal to close.")
     session.wait(-1) # Use -1 to wait indefinitely
+'''
