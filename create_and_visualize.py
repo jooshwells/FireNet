@@ -71,10 +71,8 @@ fo.delete_dataset("oiv7-firearms-negative-temp")
 
 print(f"Final dataset created with {len(final_firearm_dataset)} total samples.")
 
-'''
 # (BEST PRACTICE) Use __name__ == "__main__" to safely launch the app
 if __name__ == "__main__":
     session = fo.launch_app(final_firearm_dataset)
     print("App launched. Press Ctrl+C in this terminal to close.")
     session.wait(-1) # Use -1 to wait indefinitely
-'''
