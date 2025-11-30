@@ -1,0 +1,847 @@
+Image: datasets\yolo_dataset\images\val\000023aa04ab09ed.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [80, 201, 381, 282]}, {'class_id': 1, 'bbox': [90, 195, 390, 285]}, {'class_id': 1, 'bbox': [742, 259, 903, 372]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0005b2913ba46ddf.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [374, 452, 833, 802]}]
+Predictions: [{'class_id': 2, 'bbox': [62, 292, 342, 457], 'conf': 0.4492725133895874}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\000918f221133f8f.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [2, 32, 990, 682]}, {'class_id': 1, 'bbox': [115, 41, 1022, 675]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\000943b7d17f5382.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [344, 374, 510, 565]}, {'class_id': 1, 'bbox': [348, 365, 518, 566]}, {'class_id': 1, 'bbox': [566, 383, 618, 412]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\001995cd6c6cbbe2.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [0, 229, 208, 423]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0019b907fc0cfade.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [655, 375, 809, 446]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00317d485451bb9d.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [88, 366, 309, 478]}, {'class_id': 2, 'bbox': [101, 210, 289, 300]}, {'class_id': 2, 'bbox': [688, 536, 961, 601]}, {'class_id': 2, 'bbox': [707, 379, 977, 468]}, {'class_id': 2, 'bbox': [743, 227, 968, 300]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\003228bcad10445e.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [282, 242, 935, 682]}]
+Predictions: [{'class_id': 2, 'bbox': [343, 325, 524, 508], 'conf': 0.6962741613388062}]
+IOU for boxA: 2 and boxB: 2 = 0.11528261172212168
+--------------------
+Image: datasets\yolo_dataset\images\val\003d22c8b3ba23c2.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [154, 221, 785, 575]}]
+Predictions: [{'class_id': 2, 'bbox': [0, 212, 257, 444], 'conf': 0.304059237241745}, {'class_id': 0, 'bbox': [0, 229, 219, 451], 'conf': 0.27949219942092896}, {'class_id': 0, 'bbox': [0, 229, 218, 367], 'conf': 0.25031816959381104}]
+IOU for boxA: 2 and boxB: 2 = 0.08833245522614785
+--------------------
+Image: datasets\yolo_dataset\images\val\0040443b9402c3d9.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [494, 424, 641, 760]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00417cc8fdb21627.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [147, 162, 924, 426]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00437aaa6dee5cdc.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [0, 5, 819, 439]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0044c889d05a6492.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [513, 376, 792, 492]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00459933348988dd.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [249, 45, 1018, 278]}, {'class_id': 1, 'bbox': [256, 40, 1023, 280]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\004eb6ca27183afe.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [162, 201, 284, 366]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\005415b295122795.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [144, 707, 1022, 764]}, {'class_id': 1, 'bbox': [0, 528, 1022, 764]}, {'class_id': 1, 'bbox': [128, 704, 1022, 761]}, {'class_id': 1, 'bbox': [202, 490, 1022, 533]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00542232452a4b05.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 335, 396, 1023]}, {'class_id': 1, 'bbox': [0, 335, 380, 1023]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\005e01ec045cd720.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [174, 328, 538, 733]}, {'class_id': 1, 'bbox': [179, 337, 533, 725]}, {'class_id': 1, 'bbox': [502, 108, 600, 226]}, {'class_id': 1, 'bbox': [641, 386, 945, 492]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0060a7504ae9bbf6.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [59, 0, 436, 640]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\007f84b220311739.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [176, 0, 284, 112]}, {'class_id': 2, 'bbox': [696, 540, 1023, 682]}]
+Predictions: [{'class_id': 2, 'bbox': [257, 352, 1010, 683], 'conf': 0.33050844073295593}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\0080460633eed194.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [266, 119, 907, 440]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00805e9889dcd944.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [179, 336, 499, 758]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\009151e566411b5d.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [394, 218, 717, 568]}, {'class_id': 2, 'bbox': [751, 200, 1022, 370]}]
+Predictions: [{'class_id': 2, 'bbox': [618, 261, 856, 506], 'conf': 0.7009921669960022}]
+IOU for boxA: 2 and boxB: 2 = 0.16488222698072805
+--------------------
+Image: datasets\yolo_dataset\images\val\0094617539a2aafc.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 0, 1022, 315]}, {'class_id': 1, 'bbox': [0, 0, 1022, 336]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\009a3daf58cef350.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [207, 261, 651, 372]}, {'class_id': 1, 'bbox': [197, 255, 657, 370]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00b1f2453de4f12c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [124, 380, 502, 754]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00b54976e0d9e2c3.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [142, 189, 207, 270]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00d1e939c70f17f0.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [211, 266, 373, 354]}, {'class_id': 0, 'bbox': [656, 265, 806, 366]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00d95b69f84a4f18.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [304, 500, 729, 609]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00da5d2329ee3381.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [251, 206, 846, 377]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00dc7074c0572708.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [266, 162, 666, 443]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00de8d6dc18aa357.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 236, 1023, 852]}, {'class_id': 1, 'bbox': [0, 237, 1023, 788]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00df6076ebb98b03.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [277, 695, 482, 921]}, {'class_id': 2, 'bbox': [520, 577, 643, 705]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00df819bcaa2b17c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 274, 1023, 677]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00e6b08928369bf8.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [126, 404, 855, 497]}, {'class_id': 2, 'bbox': [155, 284, 874, 418]}, {'class_id': 2, 'bbox': [161, 207, 913, 335]}, {'class_id': 2, 'bbox': [161, 99, 922, 265]}, {'class_id': 1, 'bbox': [131, 411, 867, 495]}, {'class_id': 1, 'bbox': [157, 288, 871, 414]}, {'class_id': 1, 'bbox': [157, 100, 917, 262]}, {'class_id': 1, 'bbox': [159, 205, 909, 334]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\00f4ec9ee8901d37.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [8, 116, 622, 965]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\012367e85cd9ed58.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [0, 187, 1023, 490]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\012621161af4bae3.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [382, 483, 680, 1021]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0126937d9e15b7c6.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [255, 192, 398, 463]}, {'class_id': 2, 'bbox': [487, 310, 650, 389]}, {'class_id': 2, 'bbox': [703, 227, 727, 262]}]
+Predictions: [{'class_id': 2, 'bbox': [2, 215, 570, 683], 'conf': 0.37007007002830505}]
+IOU for boxA: 2 and boxB: 2 = 0.13178107337809766
+--------------------
+Image: datasets\yolo_dataset\images\val\013eeb549831a5c5.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [280, 196, 529, 442]}]
+Predictions: [{'class_id': 2, 'bbox': [186, 253, 589, 494], 'conf': 0.2910979390144348}, {'class_id': 2, 'bbox': [151, 252, 588, 602], 'conf': 0.2696736752986908}]
+--------------------
+Image: datasets\yolo_dataset\images\val\01403369608622ab.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [159, 571, 430, 748]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\016216c3a695b548.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [399, 661, 1023, 878]}, {'class_id': 1, 'bbox': [310, 655, 1023, 889]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\016ae9bb1b4cc4be.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [603, 365, 986, 715]}]
+Predictions: [{'class_id': 2, 'bbox': [656, 616, 1023, 758], 'conf': 0.2886865735054016}]
+IOU for boxA: 2 and boxB: 2 = 0.21284219578615451
+--------------------
+Image: datasets\yolo_dataset\images\val\016b5f83fab09c7b.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [247, 213, 787, 613]}, {'class_id': 1, 'bbox': [258, 215, 792, 611]}]
+Predictions: [{'class_id': 2, 'bbox': [265, 143, 892, 434], 'conf': 0.6948262453079224}, {'class_id': 2, 'bbox': [269, 131, 909, 538], 'conf': 0.29567429423332214}]
+IOU for boxA: 2 and boxB: 2 = 0.4075027817517088
+--------------------
+Image: datasets\yolo_dataset\images\val\01780ed47821beab.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [95, 254, 577, 590]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\01857fe92b201e12.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [73, 205, 915, 719]}, {'class_id': 2, 'bbox': [52, 158, 1023, 767]}]
+Predictions: [{'class_id': 2, 'bbox': [188, 282, 457, 763], 'conf': 0.3416704535484314}, {'class_id': 2, 'bbox': [193, 280, 574, 764], 'conf': 0.29262492060661316}, {'class_id': 2, 'bbox': [258, 283, 585, 645], 'conf': 0.2654314637184143}]
+IOU for boxA: 2 and boxB: 2 = 0.3118414310573123
+--------------------
+Image: datasets\yolo_dataset\images\val\0185f8322c3900c2.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [147, 364, 365, 423]}]
+Predictions: [{'class_id': 2, 'bbox': [391, 234, 712, 571], 'conf': 0.6279231309890747}, {'class_id': 2, 'bbox': [765, 204, 1024, 382], 'conf': 0.4119773209095001}]
+--------------------
+Image: datasets\yolo_dataset\images\val\018c2f7c1ccd0d67.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [707, 395, 984, 493]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\01df25d88b117494.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [0, 288, 206, 429]}, {'class_id': 0, 'bbox': [204, 262, 603, 484]}, {'class_id': 0, 'bbox': [417, 0, 698, 218]}, {'class_id': 0, 'bbox': [534, 487, 983, 767]}]
+Predictions: [{'class_id': 0, 'bbox': [0, 0, 1018, 768], 'conf': 0.2984277606010437}]
+IOU for boxA: 0 and boxB: 0 = 0.03715158398821218
+--------------------
+Image: datasets\yolo_dataset\images\val\01ef627fca2cd44c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 23, 823, 1024]}, {'class_id': 1, 'bbox': [27, 65, 808, 910]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\01f0faf41580ea39.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [129, 205, 972, 579]}, {'class_id': 1, 'bbox': [128, 211, 975, 583]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\01f672d2cf8bfbac.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [677, 365, 757, 644]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0202714d29cbf7bb.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [223, 377, 396, 1018]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0209905ab6725662.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [24, 35, 996, 218]}, {'class_id': 1, 'bbox': [24, 34, 994, 220]}, {'class_id': 1, 'bbox': [33, 258, 384, 349]}, {'class_id': 1, 'bbox': [74, 375, 387, 499]}, {'class_id': 1, 'bbox': [408, 242, 661, 406]}, {'class_id': 1, 'bbox': [506, 426, 999, 549]}, {'class_id': 1, 'bbox': [687, 328, 1000, 410]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\020ba49d6c5a1189.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [348, 434, 629, 830]}]
+Predictions: [{'class_id': 2, 'bbox': [220, 311, 860, 563], 'conf': 0.5618160367012024}]
+--------------------
+Image: datasets\yolo_dataset\images\val\020ebd74309b827d.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [0, 268, 122, 297]}, {'class_id': 0, 'bbox': [0, 407, 167, 478]}, {'class_id': 0, 'bbox': [0, 342, 293, 414]}, {'class_id': 0, 'bbox': [0, 164, 314, 237]}, {'class_id': 0, 'bbox': [0, 0, 425, 83]}, {'class_id': 0, 'bbox': [39, 88, 461, 170]}, {'class_id': 0, 'bbox': [120, 482, 525, 555]}, {'class_id': 0, 'bbox': [149, 214, 486, 281]}, {'class_id': 0, 'bbox': [170, 298, 569, 373]}, {'class_id': 0, 'bbox': [186, 426, 590, 498]}, {'class_id': 0, 'bbox': [302, 379, 700, 445]}, {'class_id': 0, 'bbox': [338, 267, 685, 338]}, {'class_id': 0, 'bbox': [380, 90, 780, 158]}, {'class_id': 0, 'bbox': [508, 198, 898, 295]}, {'class_id': 0, 'bbox': [534, 0, 898, 50]}, {'class_id': 0, 'bbox': [688, 381, 978, 463]}, {'class_id': 0, 'bbox': [712, 62, 978, 134]}, {'class_id': 0, 'bbox': [806, 299, 944, 339]}, {'class_id': 0, 'bbox': [883, 170, 1022, 217]}, {'class_id': 0, 'bbox': [935, 35, 1022, 68]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0255c5b642987e73.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [101, 328, 614, 752]}]
+Predictions: [{'class_id': 0, 'bbox': [436, 401, 576, 556], 'conf': 0.27073705196380615}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0275ceffe6052be8.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [216, 342, 786, 619]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0292f223183b9bbc.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [141, 0, 1023, 573]}]
+Predictions: [{'class_id': 2, 'bbox': [231, 214, 834, 443], 'conf': 0.7578544020652771}]
+--------------------
+Image: datasets\yolo_dataset\images\val\029ab4b444467d7f.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [165, 291, 913, 564]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\02aa579111dcfeb5.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [342, 271, 903, 566]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\02adbce14d8cdce7.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [17, 234, 1000, 657]}, {'class_id': 1, 'bbox': [14, 231, 1004, 659]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\02b8337f171fa966.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [326, 183, 1022, 431]}, {'class_id': 1, 'bbox': [306, 179, 1022, 431]}]
+Predictions: [{'class_id': 2, 'bbox': [267, 165, 670, 380], 'conf': 0.4879695177078247}]
+IOU for boxA: 2 and boxB: 2 = 0.35390761678460453
+--------------------
+Image: datasets\yolo_dataset\images\val\02d10dc924e0b314.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [1, 0, 654, 1021]}, {'class_id': 1, 'bbox': [0, 2, 656, 1021]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\02e3e9a3bdeae9fb.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [98, 282, 257, 348]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\02e542c69017ac4f.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 491, 1023, 682]}, {'class_id': 2, 'bbox': [0, 302, 999, 458]}, {'class_id': 1, 'bbox': [0, 299, 1002, 468]}, {'class_id': 1, 'bbox': [0, 503, 1023, 682]}]
+Predictions: [{'class_id': 2, 'bbox': [103, 441, 808, 676], 'conf': 0.3212818503379822}]
+IOU for boxA: 2 and boxB: 2 = 0.5654843199229979
+--------------------
+Image: datasets\yolo_dataset\images\val\02e7330f7b76b7a5.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [2, 171, 447, 419]}]
+Predictions: [{'class_id': 2, 'bbox': [114, 229, 1021, 576], 'conf': 0.33594948053359985}]
+IOU for boxA: 2 and boxB: 2 = 0.174866438744234
+--------------------
+Image: datasets\yolo_dataset\images\val\02ea4cd9da09abce.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [380, 337, 453, 464]}]
+Predictions: [{'class_id': 2, 'bbox': [123, 419, 652, 628], 'conf': 0.36011889576911926}]
+--------------------
+Image: datasets\yolo_dataset\images\val\02f9ae767bfcf239.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [33, 344, 834, 627]}, {'class_id': 1, 'bbox': [49, 338, 837, 632]}, {'class_id': 1, 'bbox': [259, 104, 436, 140]}]
+Predictions: [{'class_id': 0, 'bbox': [38, 220, 818, 768], 'conf': 0.6003914475440979}, {'class_id': 0, 'bbox': [163, 220, 746, 639], 'conf': 0.38059189915657043}]
+--------------------
+Image: datasets\yolo_dataset\images\val\02ff0c73b628c2a0.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 236, 895, 647]}, {'class_id': 1, 'bbox': [0, 120, 895, 661]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\03127dd34610b534.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [104, 122, 948, 450]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\031d6d549493c55e.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [311, 202, 965, 445]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\032018f3a6fe1f78.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 112, 1023, 571]}, {'class_id': 1, 'bbox': [0, 111, 1023, 575]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\033bfa59fbbd037e.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [68, 76, 971, 641]}, {'class_id': 0, 'bbox': [69, 73, 971, 638]}]
+Predictions: [{'class_id': 2, 'bbox': [470, 305, 671, 399], 'conf': 0.38397759199142456}]
+--------------------
+Image: datasets\yolo_dataset\images\val\035b02a777eb5825.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [12, 536, 494, 1021]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\03610dedfbdf8947.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [131, 145, 906, 647]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\036cced2d11ec245.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 0, 1022, 681]}, {'class_id': 1, 'bbox': [0, 0, 1022, 681]}, {'class_id': 0, 'bbox': [0, 0, 1022, 681]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\037bc2df07d9eb0f.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [0, 70, 1022, 679]}, {'class_id': 0, 'bbox': [0, 69, 1022, 679]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\038733c09c810ec7.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [88, 112, 783, 986]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\03989fe5221d5b2d.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [248, 495, 394, 819]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\03aa8080ec942669.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [311, 224, 991, 456]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\03de9e04639fc3f4.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [265, 297, 904, 499]}]
+Predictions: [{'class_id': 2, 'bbox': [449, 432, 1013, 601], 'conf': 0.5873526334762573}]
+IOU for boxA: 2 and boxB: 2 = 0.15721291946222196
+--------------------
+Image: datasets\yolo_dataset\images\val\040aff9d19cb7de2.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [79, 325, 743, 878]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\041a29977e1cb435.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [255, 327, 767, 536]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0424cbc162bcd2f9.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [279, 146, 647, 249]}]
+Predictions: [{'class_id': 2, 'bbox': [78, 222, 795, 579], 'conf': 0.4725731909275055}, {'class_id': 2, 'bbox': [297, 220, 796, 605], 'conf': 0.39562082290649414}]
+IOU for boxA: 2 and boxB: 2 = 0.03499367817508814
+--------------------
+Image: datasets\yolo_dataset\images\val\044ddbb958aef6d6.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [88, 105, 954, 643]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\04543230800dac0d.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [112, 158, 940, 618]}]
+Predictions: [{'class_id': 0, 'bbox': [105, 264, 581, 600], 'conf': 0.9199322462081909}]
+IOU for boxA: 0 and boxB: 0 = 0.4111973947895792
+--------------------
+Image: datasets\yolo_dataset\images\val\04576dc72eb88f62.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [406, 324, 614, 513]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\046590bbcb0bd9fe.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [13, 1, 1017, 674]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\046d33ac58e9a8e1.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [260, 297, 506, 437]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0488fd6b207f203a.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [191, 603, 668, 926]}, {'class_id': 2, 'bbox': [271, 383, 507, 556]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\048cb4cff077fd42.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [348, 471, 680, 1024]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\04c0e64e145109af.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [67, 0, 838, 1023]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\05165ccd6c468eb5.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [728, 0, 1023, 174]}]
+Predictions: [{'class_id': 2, 'bbox': [707, 345, 982, 439], 'conf': 0.8311008810997009}]
+--------------------
+Image: datasets\yolo_dataset\images\val\051cea0750d5bd85.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [133, 224, 278, 496]}, {'class_id': 2, 'bbox': [347, 197, 472, 643]}, {'class_id': 2, 'bbox': [421, 189, 527, 635]}, {'class_id': 2, 'bbox': [497, 155, 594, 631]}, {'class_id': 2, 'bbox': [561, 58, 663, 616]}, {'class_id': 2, 'bbox': [594, 0, 724, 607]}, {'class_id': 2, 'bbox': [668, 40, 859, 612]}, {'class_id': 1, 'bbox': [367, 201, 478, 641]}, {'class_id': 1, 'bbox': [418, 188, 527, 635]}, {'class_id': 1, 'bbox': [479, 159, 597, 627]}, {'class_id': 1, 'bbox': [524, 163, 635, 615]}, {'class_id': 1, 'bbox': [561, 65, 680, 612]}, {'class_id': 1, 'bbox': [590, 0, 720, 608]}, {'class_id': 1, 'bbox': [657, 3, 749, 600]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\051ed63d53944b48.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [11, 63, 1009, 679]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\056e6614fb985947.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [39, 96, 864, 533]}]
+Predictions: [{'class_id': 2, 'bbox': [2, 86, 568, 555], 'conf': 0.2991601824760437}]
+--------------------
+Image: datasets\yolo_dataset\images\val\057ed7c0ee6c035b.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [719, 106, 945, 438]}, {'class_id': 0, 'bbox': [724, 102, 947, 440]}]
+Predictions: [{'class_id': 2, 'bbox': [150, 184, 978, 514], 'conf': 0.9184562563896179}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0594ecef74729d71.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [89, 214, 922, 619]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\05a1795e83200966.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [0, 93, 810, 532]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\05a2b5465ae39b43.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [345, 207, 789, 497]}]
+Predictions: [{'class_id': 2, 'bbox': [23, 40, 1013, 319], 'conf': 0.7175143361091614}]
+IOU for boxA: 2 and boxB: 2 = 0.13998344790311956
+--------------------
+Image: datasets\yolo_dataset\images\val\063e222536989bc2.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [725, 134, 990, 281]}, {'class_id': 2, 'bbox': [259, 246, 1023, 588]}]
+Predictions: [{'class_id': 2, 'bbox': [344, 410, 640, 682], 'conf': 0.32843896746635437}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\0651fc3940314f97.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 198, 1023, 767]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\067edabec69d89e2.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [189, 269, 973, 381]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\068fb4b25469c4d0.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [72, 181, 732, 903]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\06b007683a116832.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [19, 203, 585, 662]}]
+Predictions: [{'class_id': 2, 'bbox': [154, 232, 881, 503], 'conf': 0.6157622337341309}]
+IOU for boxA: 2 and boxB: 2 = 0.3435222493456075
+--------------------
+Image: datasets\yolo_dataset\images\val\06dfda67cf22d968.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 543, 813, 754]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\072a4b234aff983c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [26, 314, 416, 573]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\074a0639fb7b36b5.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [272, 170, 879, 452]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0750839696706618.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [261, 329, 649, 493]}]
+Predictions: [{'class_id': 2, 'bbox': [222, 220, 821, 421], 'conf': 0.8864122033119202}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0756f49270881946.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 212, 586, 515]}, {'class_id': 1, 'bbox': [3, 204, 587, 520]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\07623a52364584e3.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [442, 227, 552, 328]}]
+Predictions: [{'class_id': 2, 'bbox': [129, 2, 1018, 464], 'conf': 0.34393370151519775}]
+--------------------
+Image: datasets\yolo_dataset\images\val\076c7105dacb32d5.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [741, 237, 899, 303]}, {'class_id': 1, 'bbox': [666, 276, 703, 300]}, {'class_id': 0, 'bbox': [732, 233, 904, 310]}]
+Predictions: [{'class_id': 2, 'bbox': [160, 291, 920, 584], 'conf': 0.9049074649810791}]
+--------------------
+Image: datasets\yolo_dataset\images\val\07730619ae04b496.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [14, 73, 911, 646]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\077560020014f836.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [488, 130, 743, 485]}]
+Predictions: [{'class_id': 2, 'bbox': [358, 270, 907, 540], 'conf': 0.45023709535598755}]
+IOU for boxA: 2 and boxB: 2 = 0.2980753547545262
+--------------------
+Image: datasets\yolo_dataset\images\val\077edd5df90dfee4.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [131, 130, 903, 629]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\07c87a854fe59a5d.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [168, 129, 987, 644]}, {'class_id': 0, 'bbox': [596, 124, 1022, 366]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\08301e4b31f8b73b.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [377, 258, 814, 607]}, {'class_id': 1, 'bbox': [262, 272, 807, 543]}]
+Predictions: [{'class_id': 2, 'bbox': [195, 361, 998, 667], 'conf': 0.3531043529510498}, {'class_id': 2, 'bbox': [275, 359, 852, 656], 'conf': 0.28348684310913086}]
+IOU for boxA: 2 and boxB: 2 = 0.36976703390442645
+--------------------
+Image: datasets\yolo_dataset\images\val\083a61c126e4ca3c.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [54, 147, 706, 849]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\088b712ebac38ad3.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [239, 266, 892, 633]}]
+Predictions: [{'class_id': 2, 'bbox': [85, 123, 1015, 636], 'conf': 0.30898889899253845}]
+IOU for boxA: 2 and boxB: 2 = 0.5023182208807563
+--------------------
+Image: datasets\yolo_dataset\images\val\088c0292bd785546.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [0, 180, 665, 655]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\08b07350225e5ace.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [217, 254, 1023, 572]}]
+Predictions: [{'class_id': 2, 'bbox': [601, 198, 1017, 495], 'conf': 0.47828084230422974}]
+IOU for boxA: 2 and boxB: 2 = 0.35856425516087037
+--------------------
+Image: datasets\yolo_dataset\images\val\08c33dc01dce3239.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [7, 355, 469, 579]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\09383bdb52bfc8be.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [46, 162, 913, 555]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\096596e6a92cd011.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [39, 159, 995, 659]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\096d564e76815aaa.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 271, 707, 530]}]
+Predictions: [{'class_id': 2, 'bbox': [2, 562, 925, 763], 'conf': 0.3476804792881012}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\09b9ceadbfb51bcc.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [371, 363, 969, 699]}, {'class_id': 2, 'bbox': [3, 333, 117, 386]}, {'class_id': 2, 'bbox': [156, 313, 204, 361]}, {'class_id': 2, 'bbox': [167, 389, 327, 462]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0a3563e0a8bdce4c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [180, 249, 995, 528]}]
+Predictions: [{'class_id': 2, 'bbox': [2, 204, 408, 487], 'conf': 0.5033099055290222}]
+IOU for boxA: 2 and boxB: 2 = 0.18840423722046115
+--------------------
+Image: datasets\yolo_dataset\images\val\0a4579d3deb36479.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [26, 71, 995, 569]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0a4a34cff82148b5.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [551, 375, 1024, 657]}, {'class_id': 1, 'bbox': [528, 378, 998, 665]}]
+Predictions: [{'class_id': 2, 'bbox': [34, 298, 830, 555], 'conf': 0.6252966523170471}]
+IOU for boxA: 2 and boxB: 2 = 0.17453377725569788
+--------------------
+Image: datasets\yolo_dataset\images\val\0aa8727faf4ae1cf.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [502, 154, 1009, 362]}, {'class_id': 2, 'bbox': [0, 268, 293, 402]}, {'class_id': 2, 'bbox': [235, 217, 440, 306]}, {'class_id': 2, 'bbox': [355, 118, 542, 219]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0b3ab17bf1ff0975.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [524, 357, 892, 563]}, {'class_id': 2, 'bbox': [121, 203, 474, 358]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0b6a1a4a70beda69.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [311, 53, 616, 291]}]
+Predictions: [{'class_id': 2, 'bbox': [71, 99, 930, 347], 'conf': 0.32547134160995483}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0be9a30f8f6eb973.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [259, 353, 661, 598]}]
+Predictions: [{'class_id': 2, 'bbox': [289, 174, 973, 451], 'conf': 0.3337381184101105}]
+IOU for boxA: 2 and boxB: 2 = 0.1449531216451559
+--------------------
+Image: datasets\yolo_dataset\images\val\0c696af549519a32.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [17, 37, 1014, 730]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0cbe70d298dc8cc0.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [311, 279, 744, 633]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0d3f3f4e0634026b.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [184, 213, 891, 751]}]
+Predictions: [{'class_id': 0, 'bbox': [78, 54, 944, 691], 'conf': 0.8197281956672668}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0d4d0e2debc49114.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [215, 202, 701, 505]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0d5e0350d26dc7ea.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 184, 547, 647]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0d93eeb2beded8ad.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [108, 101, 369, 246]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0dd83d8e034dd5f9.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [8, 250, 760, 684]}, {'class_id': 1, 'bbox': [8, 251, 673, 719]}]
+Predictions: [{'class_id': 2, 'bbox': [19, 456, 698, 798], 'conf': 0.43854615092277527}, {'class_id': 2, 'bbox': [618, 268, 893, 759], 'conf': 0.3937075138092041}]
+IOU for boxA: 2 and boxB: 2 = 0.38341250303387536
+--------------------
+Image: datasets\yolo_dataset\images\val\0de9088277371e35.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [35, 218, 933, 672]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0df4230e91c1132e.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [0, 56, 988, 614]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0e5e705f8f327d1e.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [170, 456, 677, 694]}, {'class_id': 2, 'bbox': [526, 86, 756, 262]}, {'class_id': 2, 'bbox': [557, 121, 884, 320]}, {'class_id': 2, 'bbox': [686, 30, 885, 109]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0e5f4c4c4b9885a2.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 232, 630, 510]}]
+Predictions: [{'class_id': 2, 'bbox': [129, 131, 863, 590], 'conf': 0.43751591444015503}]
+IOU for boxA: 2 and boxB: 2 = 0.3736318568117435
+--------------------
+Image: datasets\yolo_dataset\images\val\0e7e17654fa75be7.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [243, 524, 1023, 715]}, {'class_id': 1, 'bbox': [783, 474, 1023, 543]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0ea79ece19320efe.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [17, 93, 995, 495]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0ebc51aea0d8fcb4.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [163, 303, 594, 543]}]
+Predictions: [{'class_id': 0, 'bbox': [6, 85, 884, 768], 'conf': 0.5010850429534912}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0eee0c084911664d.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [139, 151, 912, 484]}, {'class_id': 1, 'bbox': [189, 160, 904, 483]}, {'class_id': 1, 'bbox': [0, 23, 221, 76]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0f22eaf0d420239f.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [0, 41, 1022, 679]}, {'class_id': 0, 'bbox': [0, 46, 1022, 679]}]
+Predictions: [{'class_id': 0, 'bbox': [99, 50, 949, 619], 'conf': 0.940028965473175}]
+--------------------
+Image: datasets\yolo_dataset\images\val\0f383cf1bdbc2a33.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [35, 474, 623, 932]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0f444f17a22d1789.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [755, 460, 1010, 601]}]
+Predictions: [{'class_id': 2, 'bbox': [301, 203, 990, 440], 'conf': 0.7970828413963318}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\0f4e0c8335d273ab.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [67, 32, 449, 185]}, {'class_id': 2, 'bbox': [241, 202, 516, 266]}]
+Predictions: [{'class_id': 2, 'bbox': [263, 291, 723, 498], 'conf': 0.7274759411811829}, {'class_id': 2, 'bbox': [259, 290, 899, 509], 'conf': 0.6837977766990662}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\0f8df79effe3ea08.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [114, 57, 607, 254]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\0fd074fdd8166f9b.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [369, 137, 852, 685]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\1035cf7cae07b543.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [112, 29, 323, 628]}]
+Predictions: [{'class_id': 2, 'bbox': [257, 340, 742, 540], 'conf': 0.40642133355140686}, {'class_id': 2, 'bbox': [212, 338, 743, 639], 'conf': 0.35984861850738525}]
+IOU for boxA: 2 and boxB: 2 = 0.06280062229707549
+--------------------
+Image: datasets\yolo_dataset\images\val\105871a3e8702bd2.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [226, 94, 882, 589]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\10595073c3422975.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [202, 214, 560, 311]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\106dd657d367b5f0.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [63, 213, 723, 445]}]
+Predictions: [{'class_id': 2, 'bbox': [289, 137, 656, 302], 'conf': 0.568902850151062}]
+IOU for boxA: 2 and boxB: 2 = 0.18044660022539943
+--------------------
+Image: datasets\yolo_dataset\images\val\106e029772d694a7.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [40, 232, 695, 423]}]
+Predictions: [{'class_id': 0, 'bbox': [84, 90, 868, 633], 'conf': 0.7111513018608093}]
+--------------------
+Image: datasets\yolo_dataset\images\val\10808a3f4ef6b0f5.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [199, 316, 476, 609]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\10bb17fe71f55a0c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [107, 142, 894, 242]}, {'class_id': 1, 'bbox': [103, 149, 915, 276]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\112e8fc8497d808e.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [42, 468, 580, 815]}, {'class_id': 2, 'bbox': [218, 101, 771, 366]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\114eac58d70e8c7c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [215, 520, 565, 784]}, {'class_id': 2, 'bbox': [597, 448, 657, 882]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\11657e44ab1d44fb.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [256, 98, 437, 984]}, {'class_id': 2, 'bbox': [0, 0, 682, 1023]}, {'class_id': 1, 'bbox': [0, 0, 142, 989]}, {'class_id': 1, 'bbox': [34, 0, 202, 1011]}, {'class_id': 1, 'bbox': [148, 0, 283, 1023]}, {'class_id': 1, 'bbox': [469, 0, 665, 1023]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\11baaefd7c81ec56.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [129, 220, 617, 434]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\121d407874aac6c5.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [418, 662, 563, 827]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\122977ac631623a9.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [65, 178, 409, 306]}, {'class_id': 1, 'bbox': [122, 357, 504, 468]}, {'class_id': 2, 'bbox': [97, 66, 401, 126]}, {'class_id': 1, 'bbox': [60, 184, 412, 296]}, {'class_id': 1, 'bbox': [103, 70, 400, 125]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\122b064bf37f445c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [324, 238, 701, 315]}]
+Predictions: [{'class_id': 2, 'bbox': [278, 324, 981, 516], 'conf': 0.7688601613044739}, {'class_id': 2, 'bbox': [413, 210, 739, 310], 'conf': 0.5451010465621948}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\127013655e62db98.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [419, 248, 627, 375]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\12805385bfa7eaa6.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [83, 197, 1007, 648]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\12a8dd7fa9629e71.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [190, 0, 287, 1023]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\12ba53bad2db1856.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [495, 382, 809, 668]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\12e2025bfa2f5333.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [10, 561, 468, 743]}, {'class_id': 2, 'bbox': [307, 358, 504, 436]}, {'class_id': 2, 'bbox': [354, 298, 500, 361]}, {'class_id': 2, 'bbox': [456, 222, 522, 254]}, {'class_id': 2, 'bbox': [475, 209, 517, 231]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\13119f25914af63c.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [376, 203, 853, 360]}]
+Predictions: [{'class_id': 0, 'bbox': [64, 113, 973, 585], 'conf': 0.637875497341156}]
+--------------------
+Image: datasets\yolo_dataset\images\val\135322ad7c54cc8a.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [444, 273, 844, 469]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\13ae3631d64788f7.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [467, 44, 1022, 478]}]
+Predictions: [{'class_id': 0, 'bbox': [41, 92, 846, 732], 'conf': 0.7365378737449646}]
+IOU for boxA: 0 and boxB: 0 = 0.23991432919629505
+--------------------
+Image: datasets\yolo_dataset\images\val\13fbb53617d018de.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [305, 221, 861, 572]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\142252c00764ae62.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [51, 240, 523, 295]}, {'class_id': 2, 'bbox': [534, 50, 657, 306]}]
+Predictions: [{'class_id': 2, 'bbox': [103, 214, 1006, 602], 'conf': 0.7841096520423889}]
+IOU for boxA: 2 and boxB: 2 = 0.0653975947274251
+--------------------
+Image: datasets\yolo_dataset\images\val\1430997e5fd33cb6.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 110, 961, 311]}, {'class_id': 1, 'bbox': [90, 190, 780, 310]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\146c96928e6ff8ef.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [444, 128, 657, 205]}, {'class_id': 2, 'bbox': [53, 140, 338, 231]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\147453c49ccdde24.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [204, 300, 922, 650]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\14ed72ff841b8402.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [199, 266, 544, 455]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\1506ce246f26ccd9.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [181, 186, 986, 531]}]
+Predictions: [{'class_id': 2, 'bbox': [372, 201, 759, 425], 'conf': 0.5449256896972656}]
+IOU for boxA: 2 and boxB: 2 = 0.3121361058601134
+--------------------
+Image: datasets\yolo_dataset\images\val\1525f2ac9f73996a.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [294, 290, 762, 575]}, {'class_id': 1, 'bbox': [299, 286, 769, 575]}]
+Predictions: [{'class_id': 2, 'bbox': [56, 177, 1006, 563], 'conf': 0.45583927631378174}]
+IOU for boxA: 2 and boxB: 2 = 0.3431601113033015
+--------------------
+Image: datasets\yolo_dataset\images\val\155a8a5868f4712d.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [19, 117, 924, 720]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\1560b9a9d8f32527.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 0, 860, 679]}]
+Predictions: [{'class_id': 2, 'bbox': [0, 11, 1012, 680], 'conf': 0.31922435760498047}]
+IOU for boxA: 2 and boxB: 2 = 0.8368390998822994
+--------------------
+Image: datasets\yolo_dataset\images\val\156d83ce3b4f1375.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 253, 1023, 680]}, {'class_id': 2, 'bbox': [430, 120, 838, 244]}]
+Predictions: [{'class_id': 2, 'bbox': [181, 226, 974, 441], 'conf': 0.2847640812397003}]
+IOU for boxA: 2 and boxB: 2 = 0.325346112886049
+--------------------
+Image: datasets\yolo_dataset\images\val\15cd772ba7eee2ab.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [90, 230, 794, 478]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\1619b12e2ae2822a.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [335, 288, 1023, 767]}]
+Predictions: [{'class_id': 0, 'bbox': [99, 119, 952, 705], 'conf': 0.7169994115829468}, {'class_id': 0, 'bbox': [99, 279, 908, 684], 'conf': 0.48412784934043884}]
+--------------------
+Image: datasets\yolo_dataset\images\val\1628e84283b0acea.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [602, 257, 723, 340]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\16c2ec53d66b1df6.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [305, 221, 1023, 406]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\16c40bd2c10e59be.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [61, 416, 950, 783]}]
+Predictions: [{'class_id': 2, 'bbox': [41, 62, 527, 315], 'conf': 0.5519816875457764}]
+IOU for boxA: 2 and boxB: 2 = 0.0
+--------------------
+Image: datasets\yolo_dataset\images\val\16c8ffd2350e2a81.jpg
+Ground Truth: [{'class_id': 1, 'bbox': [58, 65, 860, 445]}, {'class_id': 1, 'bbox': [169, 190, 944, 583]}]
+Predictions: [{'class_id': 2, 'bbox': [0, 253, 457, 504], 'conf': 0.3933342397212982}, {'class_id': 2, 'bbox': [0, 249, 480, 653], 'conf': 0.28007936477661133}]
+--------------------
+Image: datasets\yolo_dataset\images\val\16f0e6361ab6bc49.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 0, 477, 679]}, {'class_id': 2, 'bbox': [363, 0, 462, 635]}, {'class_id': 2, 'bbox': [635, 0, 975, 591]}]
+Predictions: [{'class_id': 2, 'bbox': [266, 174, 999, 452], 'conf': 0.8697455525398254}]
+IOU for boxA: 2 and boxB: 2 = 0.125070629148463
+--------------------
+Image: datasets\yolo_dataset\images\val\174631eddf0dd40e.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [0, 101, 1015, 793]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\17515c1977a65d6b.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [50, 82, 642, 650]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\1824cc6dd3f7ce7c.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [500, 395, 799, 489]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\18300b0a9f07aef5.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [515, 0, 815, 427]}, {'class_id': 2, 'bbox': [463, 423, 910, 1022]}, {'class_id': 2, 'bbox': [664, 267, 936, 953]}, {'class_id': 0, 'bbox': [467, 432, 908, 1022]}, {'class_id': 0, 'bbox': [530, 0, 794, 521]}, {'class_id': 0, 'bbox': [665, 708, 787, 1018]}, {'class_id': 0, 'bbox': [668, 279, 934, 937]}, {'class_id': 0, 'bbox': [754, 64, 924, 411]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\191a8be2fe387568.jpg
+Ground Truth: [{'class_id': 2, 'bbox': [142, 272, 849, 537]}]
+Predictions: []
+--------------------
+Image: datasets\yolo_dataset\images\val\194058054f8ca190.jpg
+Ground Truth: [{'class_id': 0, 'bbox': [475, 235, 808, 484]}]
+Predictions: []
+--------------------
