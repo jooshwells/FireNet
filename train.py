@@ -49,9 +49,7 @@ def train(model, device, train_loader, optimizer, criterion, epoch, batch_size):
         # Do forward pass for current set of data
         output = model(data)
 
-        # ======================================================================
         # Compute loss based on criterion
-        # ----------------- YOUR CODE HERE ----------------------
         loss = criterion(output, target)
 
         # Computes gradient based on final loss
@@ -66,9 +64,7 @@ def train(model, device, train_loader, optimizer, criterion, epoch, batch_size):
         # Get predicted index by selecting maximum log-probability
         pred = output.argmax(dim=1, keepdim=True)
 
-        # ======================================================================
         # Count correct predictions overall
-        # ----------------- YOUR CODE HERE ----------------------
         numCorrPred = pred.eq(target.view_as(pred))
         correct += numCorrPred.sum().item()
 
@@ -103,9 +99,6 @@ def test(model, device, test_loader, criterion):
             # Predict for data by doing forward pass
             output = model(data)
 
-            # ======================================================================
-            # Compute loss based on same criterion as training
-            # ----------------- YOUR CODE HERE ----------------------
             # Compute loss based on same criterion as training
             loss = criterion(output, target)
 
@@ -115,9 +108,7 @@ def test(model, device, test_loader, criterion):
             # Get predicted index by selecting maximum log-probability
             pred = output.argmax(dim=1, keepdim=True)
 
-            # ======================================================================
             # Count correct predictions overall
-            # ----------------- YOUR CODE HERE ----------------------
             numCorrPred = pred.eq(target.view_as(pred))
             correct += numCorrPred.sum().item()
 
@@ -141,14 +132,10 @@ def run_main(FLAGS):
     # Initialize the model and send to device
     model = ConvNet(FLAGS.mode).to(device)
 
-    # ======================================================================
     # Define loss function.
-    # ----------------- YOUR CODE HERE ----------------------
     criterion = nn.CrossEntropyLoss()
 
-    # ======================================================================
     # Define optimizer function.
-    # ----------------- YOUR CODE HERE ----------------------
     optimizer = optim.SGD(model.parameters(), lr=0.03)
 
     # Create transformations to apply to each data sample
