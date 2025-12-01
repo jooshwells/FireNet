@@ -70,6 +70,10 @@ def get_prediction_pixels(model, image_path):
     return pred_data
 
 def calculate_iou(boxA, boxB):
+    '''
+    Calculates the Intersection over Union (IoU) of two boxes
+    Parameters: boxA (ground truth box) and boxB (predicted box)
+    '''
     # box = [x1, y1, x2, y2]
     xA = max(boxA[0], boxB[0])
     yA = max(boxA[1], boxB[1])
@@ -84,11 +88,18 @@ def calculate_iou(boxA, boxB):
     return iou
 
 true_positives = 0
+false_positives = 0
 false_negatives = 0
 localization_error = 0
 
+# Folder to save any errored predictions
+output_dir = "error_analysis_error_review"
+os.makedirs(output_dir, exist_ok=True)
+
 image_paths = [os.path.normpath(i) for i in glob.glob("datasets/yolo_dataset/images/val/*.jpg")]
 label_paths = [os.path.normpath(i) for i in glob.glob("datasets/yolo_dataset/labels/val/*.txt")]
+
+model = YOLO('runs/detect/firearm_detector/weights/best.pt')
 
 for image_path, label_path in zip(image_paths, label_paths):
     print(f"Image: {image_path}")
@@ -96,23 +107,74 @@ for image_path, label_path in zip(image_paths, label_paths):
     img = cv2.imread(image_path)
     h, w, _ = img.shape
 
-    model = YOLO('runs/detect/firearm_detector/weights/best.pt')
     gt_list = get_ground_truth_pixels(label_path, w, h)
     pred_list = get_prediction_pixels(model, image_path)
 
     print("Ground Truth:", gt_list)
     print("Predictions:", pred_list)
 
-    idx = 0
+    # For errored image annotations
+    box_color_gt = (0, 255, 0)  # Green
+    box_color_pred = (0, 0, 255)  # Red
+    thickness = 3
 
+    idx = 0
+    iou_thresh = 0.5
+    is_wrong = False
     while idx < len(gt_list) and idx < len(pred_list):
         boxA = gt_list[idx]
         boxB = pred_list[idx]
-        
+
+        # Prediction matches same class as ground truth
         if(boxA['class_id'] == boxB['class_id']):
-            print(f"IOU for boxA: {boxA['class_id']} and boxB: {boxB['class_id']} = {calculate_iou(boxA['bbox'], boxB['bbox'])}")
+            iou = calculate_iou(boxA['bbox'], boxB['bbox'])
+            print(f"IOU for boxA: {boxA['class_id']} and boxB: {boxB['class_id']} = {iou}")
+
+            # Prediction was correct
+            if (iou > iou_thresh):
+                true_positives += 1
+            # Prediction had localization problem
+            else:
+                false_positives += 1
+                is_wrong = True
+                localization_error += 1
+        # Prediction predicted wrong class
+        else:
+            false_positives += 1 # Wrong class predicted
+            false_negatives += 1 # Correct class not correctly detected
+            is_wrong = True
+
+        # Draw bounding boxes if prediction wrong
+        if is_wrong:
+            x1, y1, x2, y2 = boxA['bbox']
+            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_gt, thickness)
+            x1, y1, x2, y2 = boxB['bbox']
+            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_pred, thickness)
+
         idx += 1
-    
+
+    # Get any leftover false positives
+    for idx in range(len(pred_list)):
+        if idx >= len(gt_list):
+            false_positives += 1
+            is_wrong = True
+            x1, y1, x2, y2 = pred_list[idx]['bbox']
+            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_pred, thickness)
+
+    # Get any leftover false negatives
+    for idx in range(len(gt_list)):
+        if idx >= len(pred_list):
+            false_negatives += 1
+            is_wrong = True
+            x1, y1, x2, y2 = gt_list[idx]['bbox']
+            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_gt, thickness)
+
+    # Save errored prediction images with bounding boxes
+    if is_wrong:
+        filename = os.path.basename(image_path)
+        save_path = os.path.join(output_dir, f"{filename}")
+        cv2.imwrite(save_path, img)
+
     print("--------------------")
     
 
