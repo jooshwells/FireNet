@@ -15,11 +15,11 @@ def main():
     results = model.train(
         data=data_yaml_path,
         epochs=100,
-        patience=25,
+        patience=25,                # Will stop training if it doesnt see improvement for 25 epochs
         imgsz=640,
         batch=16,
         name='firearm_detector',
-        device='0',
+        device='0',                 # '0' used for CUDA
         workers=1,
         cache=False,
         

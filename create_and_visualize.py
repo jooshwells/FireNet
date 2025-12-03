@@ -1,3 +1,7 @@
+# Script to Create Firearm Dataset
+# Joshua Wells and Connor Reynolds
+# CAP 5415  
+
 import fiftyone as fo
 import fiftyone.utils.openimages as foou
 import fiftyone.zoo as foz
@@ -6,7 +10,6 @@ from fiftyone import Classification
 # --- Define our classes ---
 positive_classes = ["Handgun", "Shotgun", "Rifle"]
 
-# (CRITICAL) Use "distractor" classes, not "Cheese"
 negative_classes = [
     "Tool", "Drill", "Hammer", "Wrench", 
     "Flashlight", "Remote control", "Backpack"
@@ -19,7 +22,7 @@ positive_dataset = foz.load_zoo_dataset(
     split="train",
     label_types=["detections"],
     classes=positive_classes,
-    max_samples=1000,  # <-- Increased for a better test
+    max_samples=1000,
     dataset_name="oiv7-firearms-positive-temp"
 )
 print(f"Loaded {len(positive_dataset)} positive samples.")
@@ -31,9 +34,8 @@ negative_dataset = foz.load_zoo_dataset(
     split="train",
     label_types=["detections"],
     classes=negative_classes,
-    # (IMPORTANT) This prevents loading images that also have firearms
     exclude_classes=positive_classes, 
-    max_samples=2000,  # <-- Keep a 1:2 or 1:3 ratio
+    max_samples=2000,
     dataset_name="oiv7-firearms-negative-temp"
 )
 print(f"Loaded {len(negative_dataset)} negative samples.")
@@ -71,7 +73,6 @@ fo.delete_dataset("oiv7-firearms-negative-temp")
 
 print(f"Final dataset created with {len(final_firearm_dataset)} total samples.")
 
-# (BEST PRACTICE) Use __name__ == "__main__" to safely launch the app
 if __name__ == "__main__":
     session = fo.launch_app(final_firearm_dataset)
     print("App launched. Press Ctrl+C in this terminal to close.")

@@ -1,8 +1,12 @@
+# Script to Export FiftyOne Dataset for Use with YOLO
+# Joshua Wells and Connor Reynolds
+# CAP 5415  
+
 import fiftyone as fo
 import fiftyone.types as types
 import os
 
-# --- 1. Load Your Final Dataset ---
+# --- 1. Load Final Dataset ---
 dataset_name = "firearm-detection-final"
 print(f"Loading dataset '{dataset_name}'...")
 

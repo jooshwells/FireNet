@@ -52,7 +52,6 @@ def get_prediction_pixels(model, image_path):
     Runs inference and returns predicted boxes in pixels.
     Returns a list of dicts: [{'class_id': 0, 'bbox': [x1, y1, x2, y2], 'conf': 0.85}]
     """
-    # Run inference
     results = model.predict(image_path, conf=0.25, verbose=False)
     result = results[0]
     
@@ -104,10 +103,11 @@ image_paths = [os.path.normpath(i) for i in glob.glob("datasets/yolo_dataset/ima
 
 model = YOLO('weights/best.pt') # Using pre-trained weights. Change to your own weights under runs/<model-name> if self-trained
 
+# Iterate over all images
 for image_path in image_paths:
-    image_path = os.path.normpath(image_path)
+    image_path = os.path.normpath(image_path) # Normalize paths (windows uses '\')
     
-    label_path = image_path.replace("images", "labels").replace(".jpg", ".txt")
+    label_path = image_path.replace("images", "labels").replace(".jpg", ".txt") # Gets label paths
     
     print(f"Processing: {os.path.basename(image_path)}")
     
@@ -122,14 +122,14 @@ for image_path in image_paths:
     iou_thresh = 0.5
     image_has_error = False
 
-    for gt in gt_list:
+    for gt in gt_list: # Go through all the ground truths
         best_iou = 0
         best_pred_idx = -1
         
         for i, pred in enumerate(pred_list):
             if i in matched_pred_indices: continue # Don't reuse predictions
             
-            if pred['class_id'] == gt['class_id']:
+            if pred['class_id'] == gt['class_id']: # Match ground truths with predictions
                 iou = calculate_iou(gt['bbox'], pred['bbox'])
                 if iou > best_iou:
                     best_iou = iou
@@ -166,7 +166,7 @@ for image_path in image_paths:
             cv2.rectangle(img, (x1, y1 - t_size[1] - 4), (x1 + t_size[0], y1), (0, 255, 0), -1)
             cv2.putText(img, label, (x1, y1 - 4), 0, 0.5, (0, 0, 0), 2)
 
-    for i, pred in enumerate(pred_list):
+    for i, pred in enumerate(pred_list): # Gather up any false positives
         if i not in matched_pred_indices:
             false_positives += 1
             image_has_error = True

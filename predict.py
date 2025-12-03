@@ -24,6 +24,7 @@ def predict():
 
     detections_found = 0
 
+    # Iterate over all images
     for i, image_path in enumerate(image_files):
         
         results = model.predict(image_path, conf=0.25, verbose=False)
