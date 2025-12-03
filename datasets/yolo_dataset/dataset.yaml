@@ -1,0 +1,7 @@
+names:
+  0: Handgun
+  1: Shotgun
+  2: Rifle
+path: E:\dev\FireNet\datasets\yolo_dataset
+train: .\images\train\
+val: .\images\val\

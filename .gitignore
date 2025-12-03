@@ -1,4 +1,3 @@
-datasets/*
 inference_results
 runs
 *.pt

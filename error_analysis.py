@@ -1,3 +1,7 @@
+# Error Analysis for Predicted Objects
+# Joshua Wells and Connor Reynolds
+# CAP 5415  
+
 import os
 import cv2
 from ultralytics import YOLO
@@ -97,104 +101,92 @@ output_dir = "error_analysis_error_review"
 os.makedirs(output_dir, exist_ok=True)
 
 image_paths = [os.path.normpath(i) for i in glob.glob("datasets/yolo_dataset/images/val/*.jpg")]
-label_paths = [os.path.normpath(i) for i in glob.glob("datasets/yolo_dataset/labels/val/*.txt")]
 
-model = YOLO('runs/detect/firearm_detector/weights/best.pt')
+model = YOLO('weights/best.pt') # Using pre-trained weights. Change to your own weights under runs/<model-name> if self-trained
 
-for image_path, label_path in zip(image_paths, label_paths):
-    print(f"Image: {image_path}")
-
+for image_path in image_paths:
+    image_path = os.path.normpath(image_path)
+    
+    label_path = image_path.replace("images", "labels").replace(".jpg", ".txt")
+    
+    print(f"Processing: {os.path.basename(image_path)}")
+    
     img = cv2.imread(image_path)
+    if img is None: continue
     h, w, _ = img.shape
 
     gt_list = get_ground_truth_pixels(label_path, w, h)
     pred_list = get_prediction_pixels(model, image_path)
 
-    # print("Ground Truth:", gt_list)
-    # print("Predictions:", pred_list)
-
-    # For errored image annotations
-    box_color_gt = (0, 255, 0)  # Green
-    box_color_pred = (0, 0, 255)  # Red
-    thickness = 3
-
-    idx = 0
+    matched_pred_indices = set()
     iou_thresh = 0.5
-    is_wrong = False
-    while idx < len(gt_list) and idx < len(pred_list):
-        boxA = gt_list[idx]
-        boxB = pred_list[idx]
+    image_has_error = False
 
-        # Prediction matches same class as ground truth
-        if(boxA['class_id'] == boxB['class_id']):
-            iou = calculate_iou(boxA['bbox'], boxB['bbox'])
-            print(f"IOU for boxA: {boxA['class_id']} and boxB: {boxB['class_id']} = {iou}")
+    for gt in gt_list:
+        best_iou = 0
+        best_pred_idx = -1
+        
+        for i, pred in enumerate(pred_list):
+            if i in matched_pred_indices: continue # Don't reuse predictions
+            
+            if pred['class_id'] == gt['class_id']:
+                iou = calculate_iou(gt['bbox'], pred['bbox'])
+                if iou > best_iou:
+                    best_iou = iou
+                    best_pred_idx = i
+        
+        # Evaluation
+        if best_iou >= iou_thresh:
+            true_positives += 1
+            matched_pred_indices.add(best_pred_idx)
 
-            # Prediction was correct
-            if (iou > iou_thresh):
-                true_positives += 1
-            # Prediction had localization problem
-            else:
-                false_positives += 1
-                is_wrong = True
-                localization_error += 1
-        # Prediction predicted wrong class
+            # Still draw true positives detected so we can compare
+            # against other potential errors in each image
+            x1, y1, x2, y2 = pred_list[best_pred_idx]['bbox']
+            class_name = model.names[int(pred['class_id'])]
+            label = f"TP: {class_name} {pred['conf']:.2f}"
+            t_size = cv2.getTextSize(label, 0, 0.5, 2)[0]
+
+            cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 0), 2)
+
+            cv2.rectangle(img, (x1, y2), (x1 + t_size[0], y2 + t_size[1] + 4), (255, 0, 0), -1)
+            cv2.putText(img, label, (x1, y2 + t_size[1] + 2), 0, 0.5, (255, 255, 255), 2)
         else:
-            false_positives += 1 # Wrong class predicted
-            false_negatives += 1 # Correct class not correctly detected
-            is_wrong = True
-
-        # Draw bounding boxes if prediction wrong
-        if is_wrong:
-            # ----- Ground truth box ----- #
-            
-            x1, y1, x2, y2 = boxA['bbox']
-            cls_id_a = int(boxA['class_id'])             # Class ID for box A
-            class_name = model.names[cls_id_a]           # Class Name for box A
-            # conf_a = float(boxA['conf'])               # Confidence of predicted class
-            label = f"{class_name}: Ground truth"        # Label string
-
-            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_gt, thickness)
-            t_size = cv2.getTextSize(label, 0, fontScale=0.6, thickness=1)[0]
-            cv2.rectangle(img, (x1, y1 - t_size[1] - 4), (x1 + t_size[0], y1), box_color_gt, -1)
-            cv2.putText(img, label, (x1, y1 - 4), 0, 0.6, (0, 0, 0), 2)
-                        
-            # ----- Prediction Box ----- #
-
-            x1, y1, x2, y2 = boxB['bbox']
-            cls_id_b = int(boxA['class_id'])             # Class ID for box A
-            class_name = model.names[cls_id_b]           # Class Name for box A
-            conf_b = float(boxB['conf'])                 # Confidence of predicted class
-            label = f"{class_name}: {conf_b:.2f}"        # Label string
-            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_pred, thickness)
-            t_size = cv2.getTextSize(label, 0, fontScale=0.6, thickness=1)[0]
-            cv2.rectangle(img, (x2-t_size[0], y1 - t_size[1] - 4), (x2, y1), box_color_pred, -1)
-            cv2.putText(img, label, (x2-t_size[0], y1 - 4), 0, 0.6, (0, 0, 0), 2)
-            
-        idx += 1
-
-    # Get any leftover false positives
-    for idx in range(len(pred_list)):
-        if idx >= len(gt_list):
-            false_positives += 1
-            is_wrong = True
-            x1, y1, x2, y2 = pred_list[idx]['bbox']
-            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_pred, thickness)
-
-    # Get any leftover false negatives
-    for idx in range(len(gt_list)):
-        if idx >= len(pred_list):
             false_negatives += 1
-            is_wrong = True
-            x1, y1, x2, y2 = gt_list[idx]['bbox']
-            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_gt, thickness)
+            image_has_error = True
+            
+            # Draw Missed Ground Truth
+            x1, y1, x2, y2 = gt['bbox']
+            class_name = model.names[int(gt['class_id'])]
+            label = f"MISS: {class_name}"
 
-    # Save errored prediction images with bounding boxes
-    if is_wrong:
-        filename = os.path.basename(image_path)
-        save_path = os.path.join(output_dir, f"{filename}")
+            cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
+
+            t_size = cv2.getTextSize(label, 0, 0.5, 2)[0]
+            cv2.rectangle(img, (x1, y1 - t_size[1] - 4), (x1 + t_size[0], y1), (0, 255, 0), -1)
+            cv2.putText(img, label, (x1, y1 - 4), 0, 0.5, (0, 0, 0), 2)
+
+    for i, pred in enumerate(pred_list):
+        if i not in matched_pred_indices:
+            false_positives += 1
+            image_has_error = True
+            
+            # Draw False Positive
+            x1, y1, x2, y2 = pred['bbox']
+            class_name = model.names[int(pred['class_id'])]
+            label = f"FP: {class_name} {pred['conf']:.2f}"
+            
+            cv2.rectangle(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
+            
+            t_size = cv2.getTextSize(label, 0, 0.5, 2)[0]
+            
+            cv2.rectangle(img, (x1, y2), (x1 + t_size[0], y2 + t_size[1] + 4), (0, 0, 255), -1)
+            
+            cv2.putText(img, label, (x1, y2 + t_size[1] + 2), 0, 0.5, (255, 255, 255), 2)
+
+    if image_has_error:
+        save_path = os.path.join(output_dir, os.path.basename(image_path))
         cv2.imwrite(save_path, img)
 
-    print("--------------------")
-
-print(f"---Results---\nTrue Positives: {true_positives}\nFalse Positives:{false_positives}\nFalse Negatives: {false_negatives}\nLocalization Errors: {localization_error}")
+print("--------------------")
+print(f"Results:\nTP: {true_positives}\nFP: {false_positives}\nFN: {false_negatives}")
