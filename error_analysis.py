@@ -110,8 +110,8 @@ for image_path, label_path in zip(image_paths, label_paths):
     gt_list = get_ground_truth_pixels(label_path, w, h)
     pred_list = get_prediction_pixels(model, image_path)
 
-    print("Ground Truth:", gt_list)
-    print("Predictions:", pred_list)
+    # print("Ground Truth:", gt_list)
+    # print("Predictions:", pred_list)
 
     # For errored image annotations
     box_color_gt = (0, 255, 0)  # Green
@@ -146,11 +146,31 @@ for image_path, label_path in zip(image_paths, label_paths):
 
         # Draw bounding boxes if prediction wrong
         if is_wrong:
+            # ----- Ground truth box ----- #
+            
             x1, y1, x2, y2 = boxA['bbox']
-            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_gt, thickness)
-            x1, y1, x2, y2 = boxB['bbox']
-            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_pred, thickness)
+            cls_id_a = int(boxA['class_id'])             # Class ID for box A
+            class_name = model.names[cls_id_a]           # Class Name for box A
+            # conf_a = float(boxA['conf'])               # Confidence of predicted class
+            label = f"{class_name}: Ground truth"        # Label string
 
+            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_gt, thickness)
+            t_size = cv2.getTextSize(label, 0, fontScale=0.6, thickness=1)[0]
+            cv2.rectangle(img, (x1, y1 - t_size[1] - 4), (x1 + t_size[0], y1), box_color_gt, -1)
+            cv2.putText(img, label, (x1, y1 - 4), 0, 0.6, (0, 0, 0), 2)
+                        
+            # ----- Prediction Box ----- #
+
+            x1, y1, x2, y2 = boxB['bbox']
+            cls_id_b = int(boxA['class_id'])             # Class ID for box A
+            class_name = model.names[cls_id_b]           # Class Name for box A
+            conf_b = float(boxB['conf'])                 # Confidence of predicted class
+            label = f"{class_name}: {conf_b:.2f}"        # Label string
+            cv2.rectangle(img, (x1, y1), (x2, y2), box_color_pred, thickness)
+            t_size = cv2.getTextSize(label, 0, fontScale=0.6, thickness=1)[0]
+            cv2.rectangle(img, (x2-t_size[0], y1 - t_size[1] - 4), (x2, y1), box_color_pred, -1)
+            cv2.putText(img, label, (x2-t_size[0], y1 - 4), 0, 0.6, (0, 0, 0), 2)
+            
         idx += 1
 
     # Get any leftover false positives
@@ -176,6 +196,5 @@ for image_path, label_path in zip(image_paths, label_paths):
         cv2.imwrite(save_path, img)
 
     print("--------------------")
-    
 
-        
+print(f"---Results---\nTrue Positives: {true_positives}\nFalse Positives:{false_positives}\nFalse Negatives: {false_negatives}\nLocalization Errors: {localization_error}")

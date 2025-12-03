@@ -22,7 +22,7 @@ def predict():
 
     for i, image_path in enumerate(image_files):
         
-        results = model.predict(image_path, conf=0.40, verbose=False)
+        results = model.predict(image_path, conf=0.25, verbose=False)
         result = results[0]
 
         # If boxes are detected (len(result.boxes) > 0)
