@@ -1,3 +1,7 @@
+# Prediction Script Using Trained Model
+# Joshua Wells and Connor Reynolds
+# CAP 5415  
+
 from ultralytics import YOLO
 import os
 import cv2
@@ -5,7 +9,7 @@ import glob
 
 def predict():
     # Load model
-    model = YOLO('runs/detect/firearm_detector/weights/best.pt')
+    model = YOLO('weights/best.pt') # Using pre-trained weights. Change to your own weights under runs/<model-name> if self-trained
 
     # Get all images in the validation folder
     val_images_path = "datasets/yolo_dataset/images/val"
