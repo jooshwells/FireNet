@@ -26,14 +26,16 @@ def predict():
 
     # Iterate over all images
     for i, image_path in enumerate(image_files):
-        
+        # Run prediction on each image
         results = model.predict(image_path, conf=0.25, verbose=False)
         result = results[0]
 
         # If boxes are detected (len(result.boxes) > 0)
         if len(result.boxes) > 0:
             img = result.orig_img.copy()
-
+            
+            # For each predicted box, draw the bounding box on the image and label it 
+            # with class name and confidence.
             for box in result.boxes:
                 x1, y1, x2, y2 = box.xyxy[0].cpu().numpy().astype(int)
                 
